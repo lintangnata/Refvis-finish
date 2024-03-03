@@ -1,0 +1,24 @@
+.foto-foto {
+    width: 300px;
+    height: auto;
+    border: 2px solid #ffffff;
+}
+
+.btn-foto {
+    background: transparent;
+    border: none;
+}
+
+.foto-profil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.scroll-foto {
+    padding: 10px 10px 10px 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 200px;
+    scrollbar-width: none;
+}
