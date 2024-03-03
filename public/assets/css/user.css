@@ -1,6 +1,7 @@
 .navbar {
-    background: rgba(51,51,153,1);
-    box-shadow: 0px 0px 10px 0px;
+    background: rgba(51, 51, 153, 1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan yang lebih detail */
+    padding: 10px 20px; /* Menyesuaikan padding */
 }
 
 .navbar-brand {
@@ -10,46 +11,73 @@
 }
 
 body {
-    background: rgb(255,0,204);
-    background: linear-gradient(0deg, rgba(255,0,204,1) 0%, rgba(51,51,153,1) 100%);
+    background: rgb(255, 0, 204);
+    background: linear-gradient(0deg, rgba(255, 0, 204, 1) 0%, rgba(51, 51, 153, 1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    margin: 0; /* Menyempurnakan margin */
+    font-family: Arial, sans-serif; /* Menambahkan font family untuk konsistensi */
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
 
-.btn-nav {
+.btn-nav,
+.btn-prof {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-    font-weight: 700;
-    padding: 7px 10px;
+    font-weight: bold;
+    padding: 10px 20px; /* Menyesuaikan padding */
     width: 100%;
     border: 2px solid #000000;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Menambahkan transisi */
 }
 
 .btn-prof {
-    background: transparent;
-    width: 100%;
     border-radius: 50%;
-    border: 2px solid #000000;
 }
 
-.btn-nav:hover {
+.btn-nav:hover,
+.btn-prof:hover {
     background-color: #000000;
     color: #fff;
     border: 2px solid #ffffff;
 }
 
 .form-control {
-    width: 10px;
+    width: 100%;
+    padding: 10px; /* Menyesuaikan padding */
     background: rgba(0, 0, 0, 0.5);
+    border: none; /* Menghilangkan border agar lebih rapi */
+    color: #fff; /* Menyesuaikan warna teks */
+    border-radius: 5px; /* Menambahkan border radius */
 }
 
 .form-login {
-    background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.8); /* Menyesuaikan opacity */
     padding: 20px;
-    box-shadow: 0px 0px 10px 0px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); /* Menyesuaikan bayangan */
+    border-radius: 10px; /* Menambahkan border radius */
+}
+
+/* Media queries untuk responsifitas */
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-brand {
+        font-size: 18px;
+    }
+}
+
+/* Menyesuaikan tombol profilmu dengan layar yang lebih kecil */
+@media screen and (max-width: 400px) {
+    .btn-prof {
+        padding: 8px; /* Menyesuaikan padding */
+    }
 }

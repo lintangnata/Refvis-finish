@@ -1,0 +1,15 @@
+.gridds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Atur jarak antar box */
+}
+
+.box {
+    flex: 0 0 30%; /* Atur lebar box */
+    margin-bottom: 20px; /* Atur jarak bawah antar box */
+}
+
+.responsive-image {
+    width: 100%; /* Pastikan gambar mengisi lebar parent (box) */
+    height: auto; /* Biarkan tinggi mengikuti rasio aspek gambar */
+}

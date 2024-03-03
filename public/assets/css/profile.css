@@ -1,21 +1,28 @@
-.prof-btn {
+.prof-btn,
+.prof-btn1 {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     font-weight: 700;
-    padding: 7px 10px;
-    width: 150px;
+    padding: 1em 2em; /* Menggunakan padding relatif */
+    width: 100%; /* Menggunakan lebar 100% untuk responsifitas */
     border: 2px solid #000000;
+    margin-bottom: 0.5em; /* Mengurangi jarak antara tombol */
 }
 
 .prof-btn1 {
-    background-color: #ffffff00;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-    padding: 7px 10px;
-    width: 150px;
+    background-color: transparent;
     border: none;
 }
 
 .actv {
     border-bottom: 2px solid #000000;
+}
+
+/* Media queries untuk responsifitas */
+@media screen and (min-width: 768px) {
+    .prof-btn,
+    .prof-btn1 {
+        width: auto; /* Mengembalikan lebar ke ukuran aslinya pada layar yang lebih besar */
+        margin-bottom: 0; /* Menghapus margin bawah */
+    }
 }
